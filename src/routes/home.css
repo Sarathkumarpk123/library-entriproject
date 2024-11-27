@@ -1,0 +1,97 @@
+/* home.css */
+
+main {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    padding: 1rem;
+    background-color: #f9f9f9;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #444;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.flex-row {
+    flex-direction: row;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.flex-row::-webkit-scrollbar {
+    height: 8px;
+}
+
+.flex-row::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 10px;
+}
+
+.gap-5 > * {
+    margin-right: 1.25rem;
+}
+
+.gap-4 > * {
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+.p-3 {
+    padding: 1rem;
+}
+
+.border {
+    border: 1px solid #ddd;
+}
+
+.rounded {
+    border-radius: 8px;
+}
+
+img {
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 1rem auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 0.5rem 0;
+}
+
+p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin: 0.2rem 0;
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    img {
+        width: 80px;
+        height: 80px;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+}
